@@ -1,0 +1,18 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  background-image: url('./Assets/Images/Background\ pattern.avif');
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.Box {
+  display: inline-block;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}

@@ -1,0 +1,13 @@
+.UserCard {
+    width: 400px;
+    text-align: center;
+    font-size: medium;
+    color: black;
+}
+
+.descriptionStyler {
+    max-height: 100px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+

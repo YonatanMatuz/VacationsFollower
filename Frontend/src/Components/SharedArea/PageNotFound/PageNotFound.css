@@ -1,0 +1,9 @@
+.PageNotFound {
+    background-repeat: repeat;
+    height: 100vh;
+}
+.PageNotFound img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px
+}
+

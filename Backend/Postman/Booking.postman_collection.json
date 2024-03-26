@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "887dda6d-8249-4c4a-b4ff-39f109fca813",
+		"name": "Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26082369"
+	},
+	"item": [
+		{
+			"name": "get all vacations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get vacation image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific vacation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacation/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacation/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "is user following",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacation/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacation/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add a vacation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"destination\": \"Sydney\",\r\n        \"description\": \"It's time to pack your suitcase and unwind by the ocean on a Sydney vacation. Pretty coastal vistas are bountiful on a trip to Sydney — Bondi Beach (4 miles (7 km) away) is an excellent example. We recommend basing yourself close by. If you're looking for more options, loads of sightseers also book Sydney packages close to Manly Beach and Coogee Beach.\",\r\n        \"start\": \"2024-04-02T21:00:00.000Z\",\r\n        \"end\": \"2024-04-08T21:00:00.000Z\",\r\n        \"price\": 99.99\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/vacations/add-vacation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations",
+						"add-vacation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "follow vacation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"destination\": \"Sydney\",\r\n        \"description\": \"It's time to pack your suitcase and unwind by the ocean on a Sydney vacation. Pretty coastal vistas are bountiful on a trip to Sydney — Bondi Beach (4 miles (7 km) away) is an excellent example. We recommend basing yourself close by. If you're looking for more options, loads of sightseers also book Sydney packages close to Manly Beach and Coogee Beach.\",\r\n        \"start\": \"2024-04-02T21:00:00.000Z\",\r\n        \"end\": \"2024-04-08T21:00:00.000Z\",\r\n        \"price\": 99.99\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/vacations/add-vacation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations",
+						"add-vacation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update existing vacation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"description\": \"no\",\r\n        \"price\": 40\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/vacations/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

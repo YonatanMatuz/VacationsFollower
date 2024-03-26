@@ -1,0 +1,66 @@
+services:
+  
+# --------------------------------------------------------------------------------------
+  vacations-database-service:
+
+    image: yonatanmatuz/vacations-database-image:1.0
+
+    build: ./Database
+
+    container_name: vacations-database-container
+
+    ports:
+      - 3306:3306
+
+    restart: unless-stopped
+
+    environment:
+      - MYSQL_HOST=localhost
+      - MYSQL_DATABASE=booking
+      - MYSQL_USER=yonatan
+      - MYSQL_PASSWORD=yonatan123
+      - MYSQL_ROOT_PASSWORD=root
+    
+    # volumes:
+    #   - booking-db:/var/lib/mysql
+
+# --------------------------------------------------------------------------------------
+
+  vacations-backend-service: 
+
+    image: yonatanmatuz/vacations-backend-image:1.0
+
+    build: ./Backend
+
+    container_name: vacations-backend-container
+
+    ports:
+      - 4000:4000
+
+    restart: unless-stopped
+
+    environment:
+      - PORT=4000
+      - MYSQL_HOST=vacations-database-service
+      - MYSQL_DATABASE=booking
+      - MYSQL_USER=yonatan
+      - MYSQL_PASSWORD=yonatan123
+
+# --------------------------------------------------------------------------------------
+
+  vacations-frontend-service:
+
+    image: yonatanmatuz/vacations-frontend-image:1.0
+
+    build: ./Frontend
+
+    container_name: vacations-frontend-container
+
+    ports:
+      - 4001:3000
+    
+    restart: unless-stopped
+
+
+# volumes:
+#   booking-db:
